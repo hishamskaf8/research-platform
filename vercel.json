@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "builds": [
+    { "src": "app/index.html", "use": "@vercel/static" }
+  ],
+  "routes": [
+    { "src": "/(.*)", "dest": "/app/index.html" }
+  ]
+}
+
+
+git add vercel.json
+git commit -m "Add vercel.json for static deploy from app/"
+git push origin main
